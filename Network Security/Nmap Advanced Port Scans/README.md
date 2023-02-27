@@ -1,4 +1,4 @@
-# Task1 - Introduction
+# Task 1 - Introduction
 
 No answer needed
 
@@ -36,3 +36,28 @@ R/ 7
 # Task 3 - TCP Maimon Scan 
 
 R/ 2
+
+# Task 4 - TCP ACK, Window, and Custom Scan 
+
+In TCP Window scan, how many flags are set? 
+
+R/ 1
+
+You decided to experiment with a custom TCP scan that has the reset flag set. What would you add after --scanflags? 
+
+R/ RST
+
+
+The VM received an update to its firewall ruleset. A new port is now allowed by the firewall. After you make sure that you have terminated the VM from Task 2, start the VM for this task. Launch the AttackBox if you haven't done that already. Once both are ready, open the terminal on the AttackBox and use Nmap to launch an ACK scan against the target VM. How many ports appear unfiltered?
+
+R/ 4
+
+
+What is the new port number that appeared?
+
+R/ 443
+
+
+Is there any service behind the newly discovered port number? (Y/N)
+
+R/ N
